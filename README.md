@@ -4,8 +4,7 @@
 ## How to make a local branch
 - git fetch (buat "ngambil" branch yang ada di repo)
 - git branch -l (nampilin list2 branch yang ada di repo)
-- git branch [nama branch] (buat bikin branch baru)
-- git switch [nama branch yang barusan kalian bikin] (buat switch dari branch sebelumnya, ke branch yang baru kalian buat tadi)
+- git checkout -b [nama branch] (buat bikin branch baru)
 - git status (pastiin kalo kalian udh ada di branch yang kalian bikin tadi)
 
 ## How to delete branch
