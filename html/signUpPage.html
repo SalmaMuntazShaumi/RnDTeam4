@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="inputData"> 
-        <form action="" class="formulir">
+        <form action="" class="formulir" name="formSignUp" onsubmit="return validation()">
           <div class="input">
+            <p id="result">Create An Account!</p>
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
           </div>
@@ -25,9 +26,10 @@
           </div>
 
           <div class="input">
-            <a href="signInPage.html"><button type="button">Sign Up</button></a>
+            <input type="submit" value="signUp">
           </div>
           </form>
     </div>
+    <script src="../Js/signUp.js"></script>
 </body>
 </html>
