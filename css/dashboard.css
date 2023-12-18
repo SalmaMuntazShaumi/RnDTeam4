@@ -16,13 +16,24 @@ body{
     height: 75vh;
 }
 
+h1, h3 {
+    padding: 15px;
+    color: white;
+    background-color: rgba(18, 2, 2, 0.7); 
+    border-radius: 8px;
+}
+
 h1{
     margin: 0%;
     color:black;
     background-color: antiquewhite;
+    font-size: 3em;
+    font-family: Trebuchet MS;
 }
 
 h3{
     color: black;
     background-color: antiquewhite;
+    font-size: 2em;
+    font-family: Trebuchet MS;
 }
