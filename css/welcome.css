@@ -1,0 +1,58 @@
+body, h2, p{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    font-family : 'Arial', Helvetica;
+    background: url('../component/pexels-pixabay-355887.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+h2 {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 500px;
+    margin-bottom: 20px;
+}
+
+
+p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+}
+
+
+button {
+    width: 130px;
+    height: 50px;
+    background-color: #8aa92d;
+    color: #fff;
+    border: 3px solid;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
