@@ -36,4 +36,48 @@ h3{
     background-color: antiquewhite;
     font-size: 2em;
     font-family: Trebuchet MS;
+}body{
+    font-family : 'Arial', Helvetica;
+    background: url('../component/pexels-pixabay-355887.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+h1, h3 {
+    padding: 15px;
+    color: white;
+    background-color: rgba(18, 2, 2, 0.7); 
+    border-radius: 8px;
+}
+
+h1{
+    margin: 0%;
+    color:black;
+    background-color: antiquewhite;
+    font-size: 3em;
+    font-family: Trebuchet MS;
+}
+
+h3{
+    color: black;
+    background-color: antiquewhite;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: Trebuchet MS;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
 }

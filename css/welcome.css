@@ -5,7 +5,7 @@ body, h2, p{
 
 body{
     font-family : 'Arial', Helvetica;
-    background: url('../component/84063.jpg') no-repeat;
+    background: url('84063.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
