@@ -1,37 +1,27 @@
 function validation(){
-    let hasDigit = /[0-9]/.test(document.formSignIn.psw.value);
-    let hasUpper = /[A-Z]/.test(document.formSignIn.psw.value);
-    let hasLower = /[a-z]/.test(document.formSignIn.psw.value);
-    if(document.formSignIn.psw.value.length<8 || document.formSignIn.psw.value.length>64){
-        document.getElementById("result").innerHTML="Password has to be between 8 and 64 characters!*";
+    
+    if(document.formSignIn.uname.value !== "Admin123"){
+        document.getElementById("result").innerHTML="Username Invalid!*";
         return false;
     }
-    else if(!hasDigit){
-        document.getElementById("result").innerHTML="Needs at least one digit for the Password!*";
+    else if(document.formSignIn.psw.value !== "Password123"){
+        document.getElementById("result").innerHTML="Wrong Password!*";
         return false;
     }
-    else if(!hasUpper){
-        document.getElementById("result").innerHTML="Needs at least one uppercase letter for the Password!*";
-        return false;
-    }
-    else if(!hasLower){
-        document.getElementById("result").innerHTML="Needs at least one lowercase letter for the Password!*";
-        return false;
-    }
-    redirectToDashboardPage();
+    redirectToDashboard();
 }
 
-function redirectToDashboardPage() {
+function redirectToDashboard() {
     try {
-        console.log('Redirecting...');
+        console.log('Redirecting...'); // Check if this log is reached
         window.location.href = '../html/dashboard.html';
     } catch (error) {
         console.error('Error:', error);
     }
 }
 
-
+// Add the event listener separately outside of the validation function
 document.getElementById("submit_btn").addEventListener('click', (event) => {
-    event.preventDefault(); 
+    event.preventDefault(); // Prevent the default form submission behavior
     validation();
 });
